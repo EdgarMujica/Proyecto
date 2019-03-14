@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="scss/style.css">
+<link rel="stylesheet" href="scss/styleMenuBar.css">
+</head>
+<body>
+<div class="nav">
+  <div class="nav-header">
+    <div class="nav-title">
+      <a>Agenda Electrónica</a>
+    </div>
+  </div>
+  <div class="nav-btn">
+    <label for="nav-check">
+      <span></span>
+      <span></span>
+      <span></span>
+    </label>
+  </div>
+  <input type="checkbox" id="nav-check">
+  <div class="nav-links">
+    <a href="ListaContacto.html">Lista</a>
+    <a href="index.html" >Nuevo Contacto</a>
+    <a href="login.html" >Salir</a>
+  </div>
+</div>
+<!--------------FORM------------------->
+<div class="container">
+ <form id="contact_form" action="" method="post" name="contact_form">
+    <div class="row">
+      <div class="col-25">
+        <label for="nombre">Nombre</label>
+      </div>
+      <div class="col-75">
+        <input type="text" id="nombre" name="nombre" required>
+      </div>
+    </div>
+        <div class="row">
+      <div class="col-25">
+         <label for="telP">Telefono personal</label>
+      </div>
+      <div class="col-75">
+         <input type="text" id="telP" name="telP" required>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-25">
+       <label for="telO">Telefono oficina</label>
+      </div>
+      <div class="col-75">
+       <input type="text" id="telO" name="telO" required>
+      </div>
+    </div>
+     <div class="row">
+      <div class="col-25">
+        <label for="emailP">Email Personal</label>
+      </div>
+      <div class="col-75">
+         <input type="email" name="emailP" id="emailP" required>
+      </div>
+    </div>
+     <div class="row">
+      <div class="col-25">
+        <label for="emailO">Email Oficina</label>
+      </div>
+      <div class="col-75">
+        <input type="email" name="emailO" id="emailO" required>
+      </div>
+    </div>
+     <div class="row">
+      <div class="col-25">
+        <label for="fecha-nacimiento">Fecha de nacimiento</label>
+      </div>
+      <div class="col-75">
+        <input type="date" name="fechaNacimiento" id="fecha-nacimiento">
+      </div>
+    </div>
+    
+    
+    
+    <div class="row">
+      <button  id="guardarRegistro" > Guardar</button>
+    </div>
+
+    <div class="row">
+    <div id="msj"></div>
+    <div>
+  </form>
+</div>
+<script src="./js/varGlobales.js"></script>
+<script src="./js/registroDatos.js"></script>
+</body>
+</html>

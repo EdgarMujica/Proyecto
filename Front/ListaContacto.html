@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="scss/styleMenuBar.css">
+<link rel="stylesheet" href="scss/styleTabla.css">
+
+</head>
+<body>
+<div class="nav">
+  <div class="nav-header">
+    <div class="nav-title">
+      Agenda Electrónica
+    </div>
+  </div>
+  <div class="nav-btn">
+    <label for="nav-check">
+      <span></span>
+      <span></span>
+      <span></span>
+    </label>
+  </div>
+  <input type="checkbox" id="nav-check">
+  <div class="nav-links">
+    <a href="ListaContacto.html">Lista</a>
+    <a href="index.html" >Nuevo Contacto</a>
+    
+   <a><form >
+    <input id="txtBuscarNombre" type="text" name="">
+    <button id="btnSearch">Buscar</button>
+  </form></a>
+    <a href="login.html" >Salir</a>
+  </div>
+</div>
+<!--------------Lista------------------->
+<table role="table" id="idTabla">
+  <thead role="rowgroup">
+    <tr role="row">
+      <th role="columnheader">Nombre</th>
+      <th role="columnheader">Telefono personal</th>
+      <th role="columnheader">Telefono oficina</th>
+      <th role="columnheader">Email Personal</th>
+      <th role="columnheader">Email Oficina</th>
+      <th role="columnheader">Fecha de nacimiento</th>
+      <th colspan="2" role="columnheader">Accion</th>
+    </tr>
+  </thead>
+  <tbody role="rowgroup" id="tbDatos">
+
+  </tbody>
+</table>
+  <div id="msj"></div>
+  <script src="./js/varGlobales.js"></script>
+<script src="js/listaContacto.js"></script>
+<script src="js/buscarContacto.js"></script>
+</body>
+</html>

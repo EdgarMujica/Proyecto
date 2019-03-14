@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="scss/style.css">
+<link rel="stylesheet" href="scss/styleMenuBar.css">
+</head>
+<body>
+<div class="nav">
+  <div class="nav-header">
+    <div class="nav-title">
+      Agenda Electrónica
+    </div>
+  </div>
+  <div class="nav-btn">
+    <label for="nav-check">
+      <span></span>
+      <span></span>
+      <span></span>
+    </label>
+  </div>
+  <input type="checkbox" id="nav-check">
+  <div class="nav-links">
+    <a href="ListaContacto.html">Lista</a>
+    <a href="index.html" >Nuevo Contacto</a>
+  </div>
+</div>
+<!--------------FORM------------------->
+<div class="container">
+ <form id="contact_form" action="" method="post" name="contact_form">
+    <div class="row">
+      <div class="col-25">
+        <label for="nombre">estas seguro que quieres eliminar a:</label>
+      </div>
+      <div class="col-75">
+        <label  id="nombre" name="nombre">? </label> 
+      </div>
+    </div>
+         
+    <div class="row">
+      <button  id="btnEliminar" > Eliminar</button>
+    </div>
+
+    <div class="row">
+    <div id="msj"></div>
+    <div>
+  </form>
+</div>
+<script src="./js/varGlobales.js"></script>
+<script src="./js/eliminarContacto.js"></script>
+</body>
+</html>
